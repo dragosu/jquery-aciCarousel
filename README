@@ -1,0 +1,39 @@
+
+aciCarousel - Cross-browser carousels with jQuery
+
+Features of aciCarousel include:
+
+- roll in any direction with a element or to a element index or to a element inside carousel list (using a jQuery selector or passing a jQuery object);
+
+- supports callback functions where you can apply different effects to the selected element, the one losing the selection at a time and for the elements at the edge of the visible area 
+who fade-in/fade-out from view (fade-in/fade-out effects are implemented by default);
+
+- supports the use of a custom HTML structure by specifying different init options;
+
+- supports callback functions run at the beginning and end of animations so it allows synchronization with other items/effects on the page or which may cause certain actions.
+
+Simple usage:
+
+$().ready(function(){
+
+    $('.carousel').aciCarousel();
+
+});
+
+Check the example to learn how to use it and how you can implement the callback functions
+to roll out your own element effects.
+
+Note: There is a limitation in the current version where you need a number of elements at
+least equal with the number of visible ones at a time.
+
+aciCarousel jQuery Plugin v1.0
+http://acoderinsights.ro
+
+Copyright (c) 2012 Dragos Ursu
+Dual licensed under the MIT or GPL Version 2 licenses.
+
+Require jQuery Library http://jquery.com
++ (optional) MouseWheel Plugin (for mouse wheel support) https://github.com/brandonaaron/jquery-mousewheel
++ (optional) TouchSwipe Plugin (for touch based devices) https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
+
+Date: Fri Jun 22 18:40 2012 +0200

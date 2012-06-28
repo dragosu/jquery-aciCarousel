@@ -1,0 +1,82 @@
+body {
+	margin:0;
+	padding:10px;
+	color: #000;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+}
+a, a:hover, a:visited {
+	color:#666;
+	font-size:13px;
+}
+.center {
+	width:900px;
+	margin:30px auto 30px auto;
+}
+.animate {
+	list-style:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+.animate>li {
+	float:left;
+}
+.animate>li>a {
+	margin:200px 10px 0 10px;
+}
+.animate .left {
+	display:block;
+	background:url(../image/side.png) 0 0 no-repeat;
+	width:30px;
+	height:29px;
+	text-indent:-5000px;
+}
+.animate .right {
+	display:block;
+	background:url(../image/side.png) -30px 0 no-repeat;
+	width:30px;
+	height:29px;
+	text-indent:-5000px;
+}
+.carousel {
+	width:700px;
+	height:432px;
+	border:1px dotted #CCC;
+	overflow:hidden;
+}
+.carousel ul {
+	height:100%;
+	list-style:none;
+	margin:0;
+	padding:0 0 0 40px;
+}
+.carousel li {
+	float:left;
+	position:relative;
+	width:217px;
+	height:100%;
+}
+.carousel .small, .carousel .blur {
+	display:none;
+	margin:100px 0 0 40px;
+}
+.carousel span {
+	position:absolute;
+	width:140px;
+	height:34px;
+	top:70%;
+	left:26%;
+	background:url(../image/title.png) 0 0 no-repeat;
+	line-height:34px;
+	text-align:center;
+	font-weight:bold;
+	font-size:15px;
+	color:#FFF;
+}
+.carousel.version4 span {
+	display:none;
+}
+.jump a {
+	display:block;
+}

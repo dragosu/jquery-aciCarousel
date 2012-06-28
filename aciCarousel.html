@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="en" />
+        <meta name="robots" content="noindex, follow" />
+        <title>aciCarousel - Test suite - Carousels with jQuery</title>
+        <link rel="stylesheet" type="text/css" href="css/aciCarousel.css" media="all" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
+        <script type="text/javascript" src="js/jquery.aciCarousel.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/style.css" media="all" />
+    </head>
+    <body>
+        <div class="center">
+            <p>There are #4 bottles: white, red, yellow and green (in this order).<br />
+                The bottles can be scrolled in view from left to right and from right to left.<br />
+                Click the left/right arrows, click on a bottle or one of the links from the list just under the carousel.</p>
+            <p>Carousel with big bottles, no special animations :</p>
+            <ul class="animate">
+                <li><a class="left" href="#" title="Left">Left</a></li>
+                <li class="carousel version1">
+                    <ul>
+                        <li><a href="#" title=""><img class="big" src="image/bottle.png" border="0" alt="" />  <span id="white">White bottle</span></a> </li>
+                        <li><a href="#" title=""><img class="big" src="image/bottle-red.png" border="0" alt="" />  <span id="red">Red bottle</span></a> </li>
+                        <li><a href="#" title=""><img class="big" src="image/bottle-yellow.png" border="0" alt="" />  <span id="yellow">Yellow bottle</span></a> </li>
+                        <li><a href="#" title=""><img class="big" src="image/bottle-green.png" border="0" alt="" />  <span id="green">Green bottle</span></a> </li>
+                    </ul>
+                </li>
+                <li><a class="right" href="#" title="Right">Right</a></li>
+            </ul>
+            <p class="jump">Roll to :</p>
+            <p>Carousel with big bottles, we add a little animation for the view-in/view-out elements (see the first/last bottles on scroll...) :</p>
+            <ul class="animate">
+                <li><a class="left" href="#" title="Left">Left</a></li>
+                <li class="carousel version2">
+                    <ul>
+                        <li><a href="#" title=""><img class="big" src="image/bottle.png" border="0" alt="" />  <span id="white">White bottle</span></a> </li>
+                        <li><a href="#" title=""><img class="big" src="image/bottle-red.png" border="0" alt="" />  <span id="red">Red bottle</span></a> </li>
+                        <li><a href="#" title=""><img class="big" src="image/bottle-yellow.png" border="0" alt="" />  <span id="yellow">Yellow bottle</span></a> </li>
+                        <li><a href="#" title=""><img class="big" src="image/bottle-green.png" border="0" alt="" />  <span id="green">Green bottle</span></a> </li>
+                    </ul>
+                </li>
+                <li><a class="right" href="#" title="Right">Right</a></li>
+            </ul>
+            <p class="jump">Roll to :</p>
+            <p>Carousel with a more complex animation, there is the 'selected' big bottle version, the others are reduced in size.<br />
+                We will use a second small version image to show - just to make sure it's in good resolution and nicely show on screen :)<br />
+                Also, we will show the bottle title only for the 'selected' one :</p>
+            <ul class="animate">
+                <li><a class="left" href="#" title="Left">Left</a></li>
+                <li class="carousel version3">
+                    <ul>
+                        <li><a href="#" title=""><img class="big" src="image/bottle.png" border="0" alt="" /> <img class="small" src="image/bottle-small.png" border="0" alt="" />  <span id="white">White bottle</span></a> </li>
+                        <li><a href="#" title=""><img class="big" src="image/bottle-red.png" border="0" alt="" /> <img class="small" src="image/bottle-red-small.png" border="0" alt="" />  <span id="red">Red bottle</span></a> </li>
+                        <li><a href="#" title=""><img class="big" src="image/bottle-yellow.png" border="0" alt="" /> <img class="small" src="image/bottle-yellow-small.png" border="0" alt="" />  <span id="yellow">Yellow bottle</span></a> </li>
+                        <li><a href="#" title=""><img class="big" src="image/bottle-green.png" border="0" alt="" /> <img class="small" src="image/bottle-green-small.png" border="0" alt="" />  <span id="green">Green bottle</span></a> </li>
+                    </ul>
+                </li>
+                <li><a class="right" href="#" title="Right">Right</a></li>
+            </ul>
+            <p class="jump">Roll to :</p>
+            <p>Just like the prevoius one but we will use a blurred image for the small bottles to get a nice effect :</p>
+            <ul class="animate">
+                <li><a class="left" href="#" title="Left">Left</a></li>
+                <li class="carousel version4">
+                    <ul>
+                        <li><a href="#" title=""><img class="big" src="image/bottle.png" border="0" alt="" />  <img class="blur" src="image/bottle-blur.png" border="0" alt="" /> <span id="white">White bottle</span></a> </li>
+                        <li><a href="#" title=""><img class="big" src="image/bottle-red.png" border="0" alt="" />  <img class="blur" src="image/bottle-red-blur.png" border="0" alt="" /> <span id="red">Red bottle</span></a> </li>
+                        <li><a href="#" title=""><img class="big" src="image/bottle-yellow.png" border="0" alt="" />  <img class="blur" src="image/bottle-yellow-blur.png" border="0" alt="" /> <span id="yellow">Yellow bottle</span></a> </li>
+                        <li><a href="#" title=""><img class="big" src="image/bottle-green.png" border="0" alt="" />  <img class="blur" src="image/bottle-green-blur.png" border="0" alt="" /> <span id="green">Green bottle</span></a> </li>
+                    </ul>
+                </li>
+                <li><a class="right" href="#" title="Right">Right</a></li>
+            </ul>
+            <p class="jump">Roll to :</p>
+            <p>Some options to play with :-)</p>
+            <form>
+                Set the 'selected' bottle (this will destroy/reinit carousels) :
+                <select name="selected">
+                    <option value="0">First one</option>
+                    <option value="1">Middle one</option>
+                    <option value="2">Last one</option>
+                </select><br />
+                Note: The first item (bottle) will always be the selected one on initialization.<br />
+                <input type="button" name="destroy" value="Destroy" /> &nbsp;
+                <input type="button" name="init" value="(re)Init" />
+            </form>
+        </div>
+        <script language="javascript" type="text/javascript">
+            <!--
+
+            // add a 'roll in' effect (to save time & space :) I'll use the same function for all carousels)
+            function rollIn (object, delay, direction) {
+                // get the carousel element
+                var carousel = object.parents('.carousel:first');
+                if (carousel.hasClass('version3') || carousel.hasClass('version4'))
+                {
+                    var big = object.find('.big');
+                    object.find('.small,.blur').hide();
+                    object.find('span').delay(delay / 2).fadeIn(delay / 2);
+                    big.css({
+                        // reset it before animation
+                        'width':'100px',
+                        'height':'199px',
+                        'margin-top': 100,
+                        'margin-left': 40
+                    }).fadeTo(0, 1).show().animate({
+                        'width': 217,
+                        'height': 432,
+                        'margin-top': 0,
+                        'margin-left': 0
+                    }, {
+                        'duration' : delay,
+                        'easing' : 'swing'
+                    });
+                }
+            }
+
+            // add a 'roll out' effect (to save time & space :) I'll use the same function for all carousels)
+            function rollOut (object, delay, direction)
+            {
+                // get the carousel element
+                var carousel = object.parents('.carousel:first');
+                if (carousel.hasClass('version3') || carousel.hasClass('version4'))
+                {
+                    object.find('span').fadeOut(delay / 2);
+                    var big = object.find('.big');
+                    var small = object.find('.small');
+                    var blur = object.find('.blur');
+                    small.hide();
+                    blur.hide();
+                    big.css({
+                        // reset it before animation
+                        'width':'217px',
+                        'height':'432px',
+                        'margin-top': 0,
+                        'margin-left': 0
+                    }).fadeTo(0, 1).show().animate({
+                        'width': 100,
+                        'height': 199,
+                        'margin-top': 100,
+                        'margin-left': 40
+                    }, {
+                        'duration' : delay,
+                        'easing' : 'swing',
+                        'complete' : function(){
+                            big.hide();
+                            if (carousel.hasClass('version3'))
+                            {
+                                small.show();
+                            }
+                            else
+                            {
+                                blur.show();
+                            }
+                        }
+                    });
+                }
+            }
+
+            // add a 'fade in' effect (to save time & space :) I'll use the same function for all carousels)
+            function fadeIn (object, delay, direction) {
+                // get the carousel element
+                var carousel = object.parents('.carousel:first');
+                if (carousel.hasClass('version2'))
+                {
+                    var big = object.find('.big');
+                    big.css({
+                        // reset the size before animation
+                        'width':'100px',
+                        'height':'199px'
+                    }).show().animate({
+                        'width': 217,
+                        'height': 432,
+                        'margin-top': 0,
+                        'margin-left': 0
+                    }, {
+                        'duration' : delay,
+                        'easing' : 'swing'
+                    });
+                }
+                // return true to apply the default fade in effect
+                return true;
+            }
+
+            // add a 'fade out' effect (to save time & space :) I'll use the same function for all carousels)
+            function fadeOut (object, delay, direction)
+            {
+                // get the carousel element
+                var carousel = object.parents('.carousel:first');
+                if (carousel.hasClass('version2'))
+                {
+                    var big = object.find('.big');
+                    big.css({
+                        // reset the size before animation
+                        'width':'217px',
+                        'height':'432px'
+                    }).show().animate({
+                        'width': 100,
+                        'height': 199,
+                        'margin-top': 100,
+                        'margin-left': 40
+                    }, {
+                        'duration' : delay,
+                        'easing' : 'swing'
+                    });
+                }
+                // return true to apply the default fade out effect
+                return true;
+            }
+
+            // just add a list of links to show how to 'jump' to a specific element
+            // we do this before carousel initialization to prevent adding the two extra elements added by the plugin
+            // [it'a also possible to filter out things with .slice(1, -1) after carousel initialization]
+            $('.carousel').each(function(){
+                var $this = $(this);
+                var jump = $this.parents('.animate:first').next('p.jump');
+                $this.find('span').each(function(){
+                    jump.append('<a href="' + $(this).attr('id') + '" title="">' + $(this).html() + '</a>');
+                    jump.find('a:last').on('click', function(){
+                        // roll to the 'span' element (left or right - by the smallest distance - as we do not specify in what direction)
+                        $this.trigger('roll', { 'object': 'span[id="' + $(this).attr('href') + '"]' });
+                        // show us 'real' element index
+                        // alert($this.aciCarousel('index', 'span[id="' + $(this).attr('href') + '"]'));
+                        return false;
+                    });
+                });
+            });
+
+            $('select[name=selected]').val(1);
+
+            // init carousels using default selectors as it matches our HTML structure
+            $('.carousel').aciCarousel({
+                'mainIndex': 1,         // make the middle bottle the 'selected' one
+                'rollIn': rollIn,       // callback to add 'roll in' effects
+                'rollOut': rollOut,     // callback to add 'roll out' effects
+                'fadeIn': fadeIn,       // callback to add 'fade in' effects (for the first/last elements in view)
+                'fadeOut': fadeOut      // callback to add 'fade out' effects (for the first/last elements in view)
+            });
+
+            // destroy carousels, revert animations :)
+            function destroyThem ()
+            {
+                $('.carousel').aciCarousel('destroy').find('li').each(function(){
+                    // we need to revert to an 'initial' bottle state (revert all our effects)
+                    $(this).fadeTo(0, 1);
+                    $(this).find('.small,.blur').hide();
+                    $(this).find('.big').fadeTo(0, 1).show().css({
+                        'width': 217,
+                        'height': 432,
+                        'margin-top': 0,
+                        'margin-left': 0
+                    });
+                    $(this).find('span').show();
+                });
+            }
+
+            // destroy carousels
+            $('input[name=destroy]').on('click', function(){
+                // evil me >:)
+                destroyThem();
+            });
+
+            // init carousels
+            $('input[name=init]').on('click', function(){
+                // I'm an angel O:)
+                $('.carousel').aciCarousel({
+                    'mainIndex': parseInt($('select[name=selected]').val()),
+                    'rollIn': rollIn,
+                    'rollOut': rollOut,
+                    'fadeIn': fadeIn,
+                    'fadeOut': fadeOut
+                });
+            });
+
+            // change the 'selected' index
+            $('select[name=selected]').on('change', function(){
+                destroyThem();
+                $('.carousel').aciCarousel({
+                    'mainIndex': parseInt($('select[name=selected]').val()),
+                    'rollIn': rollIn,
+                    'rollOut': rollOut,
+                    'fadeIn': fadeIn,
+                    'fadeOut': fadeOut
+                });
+            });
+
+            // scroll one element to left
+            $('.left').on('click', function(){
+                $(this).parents('.animate:first').find('.carousel').trigger('rollPrev');
+                return false;
+            });
+
+            // scroll one element to right
+            $('.right').on('click', function(){
+                $(this).parents('.animate:first').find('.carousel').trigger('rollNext');
+                return false;
+            });
+
+            // we add a nice roll on bottle click ;-)
+            $('.carousel a').on('click', function(){
+                $(this).parents('.carousel:first').trigger('roll', { 'object':$(this) });
+                return false;
+            });
+
+            -->
+        </script>
+    </body>
+</html>
